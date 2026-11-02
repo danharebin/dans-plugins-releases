@@ -1,0 +1,51 @@
+.dans-plugins-view {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: var(--size-4-6);
+	overflow-y: auto;
+}
+.dans-plugins-view h1 { margin-bottom: var(--size-4-2); }
+.dans-plugins-view h2, .dans-plugins-view h3 { margin-top: 0; }
+.dans-plugins-view .dans-plugins-muted { color: var(--text-muted); font-size: var(--font-ui-small); }
+.dans-plugins-account, .dans-plugins-card {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	background: var(--background-secondary);
+	padding: var(--size-4-4);
+	margin: var(--size-4-4) 0;
+}
+.dans-plugins-view .setting-item { flex-wrap: wrap; gap: var(--size-4-2); }
+.dans-plugins-view .setting-item-control { flex: 1 1 200px; }
+.dans-plugins-view .setting-item-control input { width: 100%; }
+.dans-plugins-view .dans-plugins-login-form .setting-item {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	align-items: start;
+	gap: var(--size-4-2);
+}
+.dans-plugins-view .dans-plugins-login-form .setting-item-info,
+.dans-plugins-view .dans-plugins-login-form .setting-item-control {
+	width: 100%;
+	min-width: 0;
+	margin: 0;
+}
+.dans-plugins-view .dans-plugins-login-form .setting-item-control { justify-content: stretch; }
+.dans-plugins-view .dans-plugins-login-form input[type="email"],
+.dans-plugins-view .dans-plugins-login-form input[type="password"] {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+.dans-plugins-section-heading { display: flex; align-items: center; justify-content: space-between; gap: var(--size-4-3); }
+.dans-plugins-section-heading h2 { margin-bottom: 0; }
+.dans-plugins-status { min-height: 1.5em; margin: var(--size-4-4) 0; color: var(--text-muted); }
+.dans-plugins-view .dans-plugins-error { color: var(--text-error); }
+.dans-plugins-empty { padding: var(--size-4-6) var(--size-4-4); border: 1px dashed var(--background-modifier-border); border-radius: var(--radius-m); color: var(--text-muted); }
+.dans-plugins-product-id { color: var(--text-faint); font-size: var(--font-ui-smaller); }
+.dans-plugins-card p, .dans-plugins-account p { overflow-wrap: anywhere; white-space: pre-wrap; }
+.dans-plugins-footer { margin-top: var(--size-4-6); }
+@media (max-width: 480px) { .dans-plugins-view { padding: var(--size-4-3); } }
+
